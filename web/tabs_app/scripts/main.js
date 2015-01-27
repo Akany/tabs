@@ -1,10 +1,12 @@
 requirejs.config({
+    baseUrl: '.',
     paths: {
-        tabs: './scripts',
-        vendor: '../vendor',
-        backbone: '../vendor/backbone',
-        underscore: '../vendor/underscore',
-        jquery: '../vendor/jquery'
+        app: './scripts',
+        template: './template',
+        backbone: 'vendor/backbone',
+        underscore: 'vendor/underscore',
+        jquery: 'vendor/jquery',
+        text: 'vendor/text'
     },
     shims: {
         'backbone': {
@@ -18,7 +20,8 @@ requirejs.config({
 });
 
 define([
-    'backbone'
+    'backbone',
+    'app/controller/tabsController'
 ], function (Backbone) {
 
 });
